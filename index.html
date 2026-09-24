@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="fr" class="scroll-smooth scroll-pt-24">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio professionnel de Zounnegon Iboukoun David, infirmier diplômé et entrepreneur.">
+    <link rel="icon" type="image/png" href="./static/images/favicon/favicon.png">
+    <title>David Zounnegon | Infirmier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { montserrat: ['Montserrat', 'sans-serif'] }, colors: { forest: '#123c32', leaf: '#2f8063', mint: '#b5ddc1', lime: '#d9ec72' } } } };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./input.css">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif
+        }
+
+        .active-link {
+            color: #d9ec72 !important
+        }
+
+        .active-link .indicator {
+            width: 100%
+        }
+
+        @media(prefers-reduced-motion:reduce) {
+
+            *,
+            *::before,
+            *::after {
+                animation: none !important;
+                transition: none !important
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-800 font-montserrat text-white antialiased">
+    <header id="accueil">
+        <nav class="fixed p-3 top-0 z-40 w-full border-b border-gray-700/60 bg-gray-900/95 backdrop-blur"
+            aria-label="Navigation principale">
+            <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between p-4"><a href="#accueil"
+                    class="text-xl font-bold tracking-tight">David<span class="text-lime">.</span></a><button
+                    id="menu-button" type="button"
+                    class="inline-flex h-10 w-10 items-center justify-center rounded-lg text-gray-300 hover:bg-gray-800 lg:hidden"
+                    aria-controls="main-menu" aria-expanded="false"><span class="sr-only">Ouvrir le menu</span><svg
+                        class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg></button>
+                <div id="main-menu" class="hidden w-full lg:block lg:w-auto">
+                    <ul
+                        class="mt-4 flex flex-col rounded-xl border border-gray-800 bg-gray-900 p-4 font-medium lg:mt-0 lg:flex-row lg:items-center lg:gap-4 lg:border-0 lg:bg-transparent lg:p-0">
+                        <li><a href="#accueil"
+                                class="nav-link group relative inline-block px-3 py-2 text-sm text-gray-300 hover:text-lime">Accueil<span
+                                    class="indicator absolute inset-x-0 bottom-0 h-0.5 w-0 bg-lime transition-all group-hover:w-full"></span></a></li>
+                        <li><a href="#about"
+                                class="nav-link group relative inline-block px-3 py-2 text-sm text-gray-300 hover:text-lime">À
+                                propos<span
+                                    class="indicator absolute inset-x-0 bottom-0 h-0.5 w-0 bg-lime transition-all group-hover:w-full"></span></a>
+                        </li>
+                        <li><a href="#statistiques"
+                                class="nav-link group relative inline-block px-3 py-2 text-sm text-gray-300 hover:text-lime">Repères<span
+                                    class="indicator absolute inset-x-0 bottom-0 h-0.5 w-0 bg-lime transition-all group-hover:w-full"></span></a>
+                        </li>
+                        <li><a href="#competences"
+                                class="nav-link group relative inline-block px-3 py-2 text-sm text-gray-300 hover:text-lime">Compétences<span
+                                    class="indicator absolute inset-x-0 bottom-0 h-0.5 w-0 bg-lime transition-all group-hover:w-full"></span></a>
+                        </li>
+                        <li><a href="#parcours"
+                                class="nav-link group relative inline-block px-3 py-2 text-sm text-gray-300 hover:text-lime">Parcours<span
+                                    class="indicator absolute inset-x-0 bottom-0 h-0.5 w-0 bg-lime transition-all group-hover:w-full"></span></a>
+                        </li>
+                        <li><a href="#services"
+                                class="nav-link group relative inline-block px-3 py-2 text-sm text-gray-300 hover:text-lime">Expertise<span
+                                    class="indicator absolute inset-x-0 bottom-0 h-0.5 w-0 bg-lime transition-all group-hover:w-full"></span></a>
+                        </li>
+                        <li><a href="#contact"
+                                class="nav-link group relative inline-block px-3 py-2 text-sm text-gray-300 hover:text-lime">Contact<span
+                                    class="indicator absolute inset-x-0 bottom-0 h-0.5 w-0 bg-lime transition-all group-hover:w-full"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="h-20"></div>
+    <main class="overflow-x-hidden">
+        <section id="about" class="mx-auto max-w-7xl scroll-mt-24 px-4 py-16 sm:px-8 lg:py-24">
+            <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+                <div data-aos="fade-left">
+                    <p class="mb-4 text-xs font-semibold uppercase tracking-[.18em] text-mint">Infirmier diplômé ·
+                        Entrepreneur</p>
+                    <h1 class="mb-6 text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl lg:text-6xl">David
+                        I.<br><span class="text-lime">ZOUNNEGNON</span></h1>
+                    <p class="mb-8 max-w-2xl text-base leading-8 text-gray-300 md:text-lg">Infirmier titulaire d’une
+                        Licence professionnelle en Sciences infirmières et obstétricales. J’allie rigueur, écoute et
+                        sens des responsabilités dans chaque prise en charge.</p>
+                    <div class="flex flex-wrap gap-3"><a href="#parcours"
+                            class="inline-flex items-center gap-3 bg-lime px-6 py-3 text-sm font-bold text-forest transition hover:-translate-y-1">Mon
+                            parcours <span>↓</span></a><a href="./static/images/cv.jpg" target="_blank" rel="noopener"
+                            class="inline-flex items-center gap-2 border border-leaf px-6 py-3 text-sm font-bold text-mint transition hover:bg-leaf hover:text-white">Voir
+                            mon CV <span>↗</span></a></div>
+                    <div class="mt-8 flex flex-wrap gap-3 text-xs text-gray-400"><span
+                            class="rounded-full border border-gray-700 px-3 py-2">Parakou, Bénin</span><span
+                            class="rounded-full border border-gray-700 px-3 py-2">Français · Anglais · Fon</span></div>
+                </div>
+                <div class="relative mx-auto w-full max-w-sm p-4" data-aos="fade-right">
+                    <div class="absolute inset-0 rotate-3 rounded-2xl border-2 border-leaf/50"></div>
+                    <div class="absolute inset-0 -rotate-3 rounded-2xl border-2 border-gray-700"></div>
+                    <div class="relative overflow-hidden rounded-2xl border border-gray-700 bg-gray-900 shadow-2xl">
+                        <img src="./static/images/favicon/apropos.png" alt="Portrait de Zounnegon Iboukoun David" class="aspect-[4/5] w-full object-cover grayscale-10">
+                    </div>
+                    <span
+                        class="animate-bounce absolute -bottom-2 -right-1 rounded-full border border-lime bg-gray-900 px-4 py-2 text-xs font-bold text-lime shadow-lg">
+                        SOINS · RIGUEUR
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section id="statistiques" class="bg-gray-900 px-4 py-16 sm:px-8">
+            <div class="mx-auto grid max-w-7xl grid-cols-2 gap-5 lg:grid-cols-4">
+                <div class="border-l-2 border-lime p-6" data-aos="zoom-in">
+                    <p class="text-3xl font-extrabold">01</p>
+                    <p class="mt-2 text-xs text-gray-400">Licence professionnelle</p>
+                </div>
+                <div class="border-l-2 border-lime p-6" data-aos="zoom-in">
+                    <p class="text-3xl font-extrabold">04</p>
+                    <p class="mt-2 text-xs text-gray-400">Expériences de terrain</p>
+                </div>
+                <div class="border-l-2 border-lime p-6" data-aos="zoom-in">
+                    <p class="text-3xl font-extrabold">03</p>
+                    <p class="mt-2 text-xs text-gray-400">Langues</p>
+                </div>
+                <div class="border-l-2 border-lime p-6" data-aos="zoom-in">
+                    <p class="text-3xl font-extrabold">2025</p>
+                    <p class="mt-2 text-xs text-gray-400">Dernière expérience</p>
+                </div>
+            </div>
+        </section>
+        <section id="competences" class="mx-auto max-w-7xl scroll-mt-24 px-4 py-20 sm:px-8 lg:py-28">
+            <div class="mb-12">
+                <p class="animate-pulse text-xs font-bold uppercase tracking-[.18em] text-leaf">01 / Compétences</p>
+                <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">Des gestes précis, <span class="text-lime">une
+                        présence humaine.</span></h2>
+            </div>
+            <div class="grid gap-x-12 gap-y-8 md:grid-cols-2">
+                <div class="space-y-6">
+                    <div>
+                        <div class="mb-2 flex justify-between text-sm font-semibold"><span>Soins infirmiers &
+                                surveillance</span><span class="text-lime">94%</span></div>
+                        <div class="h-2 overflow-hidden rounded-full bg-gray-900">
+                            <div class="h-full w-[94%] rounded-full bg-leaf"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mb-2 flex justify-between text-sm font-semibold"><span>Urgences &
+                                hygiène</span><span class="text-lime">88%</span></div>
+                        <div class="h-2 overflow-hidden rounded-full bg-gray-900">
+                            <div class="h-full w-[88%] rounded-full bg-leaf"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mb-2 flex justify-between text-sm font-semibold"><span>Pansements &
+                                injections</span><span class="text-lime">86%</span></div>
+                        <div class="h-2 overflow-hidden rounded-full bg-gray-900">
+                            <div class="h-full w-[86%] rounded-full bg-leaf"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div>
+                        <div class="mb-2 flex justify-between text-sm font-semibold"><span>Prélèvements & voie
+                                veineuse</span><span class="text-lime">84%</span></div>
+                        <div class="h-2 overflow-hidden rounded-full bg-gray-900">
+                            <div class="h-full w-[84%] rounded-full bg-leaf"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mb-2 flex justify-between text-sm font-semibold"><span>Word · PowerPoint ·
+                                Internet</span><span class="text-lime">68%</span></div>
+                        <div class="h-2 overflow-hidden rounded-full bg-gray-900">
+                            <div class="h-full w-[68%] rounded-full bg-leaf"></div>
+                        </div>
+                    </div>
+                    <p class="text-sm leading-7 text-gray-400">Diagnostic infirmier, dossier patient, constantes, soins
+                        cutanés, sutures, sondes, oxygénothérapie, aspiration et aide psychologique.</p>
+                </div>
+            </div>
+        </section>
+        <section id="parcours" class="scroll-mt-24 bg-gray-900 px-4 py-20 sm:px-8 lg:py-28">
+            <div class="mx-auto max-w-7xl">
+                <div class="mb-12 flex flex-wrap items-end justify-between gap-6">
+                    <div>
+                        <p class="animate-pulse text-xs font-bold uppercase tracking-[.18em] text-leaf">02 / Parcours professionnel
+                        </p>
+                        <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">Le terrain comme <span
+                                class="text-lime">école.</span></h2>
+                    </div>
+                    <div class="flex gap-3">
+                        <a href="./static/docs/CV_benin.pdf" target="_blank" rel="noopener" class="bg-lime px-5 py-3 text-xs font-bold text-forest">CV complet ↗</a>
+                        <!-- <a href="./static/images/suite-cv.jpg" target="_blank" rel="noopener" class="border border-leaf px-5 py-3 text-xs font-bold text-mint">Suite du CV
+                            ↗
+                        </a> -->
+                    </div>
+                </div>
+                <div class="grid gap-8 lg:grid-cols-2">
+                    <article class="border-l-2 border-leaf bg-gray-800 p-6" data-aos="fade-up">
+                        <p class="text-xs font-bold uppercase tracking-wider text-mint">2023 — août 2025</p>
+                        <h3 class="mt-3 text-xl font-bold">Infirmier vacataire</h3>
+                        <p class="mt-2 text-xs font-semibold text-gray-300">Hôpital Paul VI · Service de chirurgie ·
+                            Ouagadougou</p>
+                        <p class="mt-4 text-sm leading-6 text-gray-400">Soins curatifs, préventifs et palliatifs,
+                            surveillance post-opératoire, urgences traumatologiques et suivi des patients.</p>
+                    </article>
+                    <article class="border-l-2 border-leaf bg-gray-800 p-6" data-aos="fade-up">
+                        <p class="text-xs font-bold uppercase tracking-wider text-mint">Juillet — octobre 2023</p>
+                        <h3 class="mt-3 text-xl font-bold">Infirmier stagiaire</h3>
+                        <p class="mt-2 text-xs font-semibold text-gray-300">Hôpital Paul VI · Service de pédiatrie</p>
+                        <p class="mt-4 text-sm leading-6 text-gray-400">Accueil, prise des constantes, soins adaptés aux
+                            enfants malades et surveillance hospitalière.</p>
+                    </article>
+                    <article class="border-l-2 border-leaf bg-gray-800 p-6" data-aos="fade-up">
+                        <p class="text-xs font-bold uppercase tracking-wider text-mint">2023</p>
+                        <h3 class="mt-3 text-xl font-bold">Infirmier vacataire</h3>
+                        <p class="mt-2 text-xs font-semibold text-gray-300">Cabinet de soins infirmiers Yolsogo ·
+                            Ouagadougou</p>
+                        <p class="mt-4 text-sm leading-6 text-gray-400">Consultations infirmières, accueil, soins,
+                            urgences et mise en observation.</p>
+                    </article>
+                    <article class="border-l-2 border-leaf bg-gray-800 p-6" data-aos="fade-up">
+                        <p class="text-xs font-bold uppercase tracking-wider text-mint">07 avril — 07 juillet 2025</p>
+                        <h3 class="mt-3 text-xl font-bold">Infirmier stagiaire</h3>
+                        <p class="mt-2 text-xs font-semibold text-gray-300">Hôpital Évangélique de K... · Chirurgie
+                            générale</p>
+                        <p class="mt-4 text-sm leading-6 text-gray-400">Soins adaptés, surveillance post-opératoire,
+                            préparation préopératoire, pansements, IEC/CCC et hygiène.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="mx-auto max-w-7xl scroll-mt-24 px-4 py-20 sm:px-8 lg:py-28">
+            <div class="mb-12">
+                <p class="animate-pulse text-xs font-bold uppercase tracking-[.18em] text-leaf">03 / Expertise</p>
+                <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">Ce que je peux <span
+                        class="text-lime">apporter.</span></h2>
+            </div>
+            <div class="grid gap-6 md:grid-cols-3">
+                <article data-aos="zoom-in" class="rounded-lg bg-gray-900 p-8 text-center transition hover:-translate-y-2 hover:bg-leaf">
+                    <span class="text-3xl text-lime">✚</span>
+                    <h3 class="mt-6 text-xl font-bold">Soins attentifs</h3>
+                    <p class="mt-4 text-sm leading-6 text-gray-400">
+                        Des gestes précis, une surveillance régulière et une
+                        attention adaptée à chaque patient.
+                    </p>
+                </article>
+                <article data-aos="zoom-in" class="rounded-lg bg-gray-900 p-8 text-center transition hover:-translate-y-2 hover:bg-leaf">
+                    <span class="text-3xl text-lime">◎</span>
+                    <h3 class="mt-6 text-xl font-bold">Travail en équipe</h3>
+                    <p class="mt-4 text-sm leading-6 text-gray-400">Une communication claire avec les équipes
+                        soignantes, les patients et leurs familles.</p>
+                </article>
+                <article data-aos="zoom-in" class="rounded-lg bg-gray-900 p-8 text-center transition hover:-translate-y-2 hover:bg-leaf">
+                    <span class="text-3xl text-lime">↗</span>
+                    <h3 class="mt-6 text-xl font-bold">Entreprendre</h3>
+                    <p class="mt-4 text-sm leading-6 text-gray-400">Une ambition de développer mes compétences et de
+                        construire des projets utiles.</p>
+                </article>
+            </div>
+        </section>
+        <section id="temoignages" class="scroll-mt-24 bg-gray-900 px-4 py-20 sm:px-8 lg:py-24">
+            <div class="mx-auto max-w-7xl">
+                <div class="mb-10">
+                    <p class="animate-pulse text-xs font-bold uppercase tracking-[.18em] text-leaf">04 / Valeurs professionnelles</p>
+                    <h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">
+                        Ce qui guide 
+                        <span class="text-lime">ma pratique.</span>
+                    </h2>
+                </div>
+                <div class="grid gap-6 md:grid-cols-3">
+                    <blockquote data-aos="zoom-in" class="border-t-2 border-lime p-6 text-sm leading-7 text-gray-300">« La rigueur et le
+                        sens des responsabilités sont au cœur de chaque soin. »</blockquote>
+                    <blockquote data-aos="zoom-in" class="border-t-2 border-lime p-6 text-sm leading-7 text-gray-300">« Écouter, rassurer
+                        et travailler en équipe permettent d’avancer avec confiance. »</blockquote>
+                    <blockquote data-aos="zoom-in" class="border-t-2 border-lime p-6 text-sm leading-7 text-gray-300">« Apprendre
+                        continuellement ouvre la voie à des projets capables d’avoir un impact durable. »</blockquote>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="relative scroll-mt-24 overflow-hidden bg-gray-800 px-4 py-20 sm:px-8 lg:py-28">
+            <div class="absolute -top-10 -left-10 h-72 w-72 rounded-full bg-leaf/20 blur-3xl"></div>
+            <div class="absolute -bottom-10 -right-10 h-72 w-72 rounded-full bg-leaf/20 blur-3xl"></div>
+            <div class="relative z-10 mx-auto max-w-4xl text-center">
+                <p class="animate-pulse text-xs font-bold uppercase tracking-[.18em] text-mint">05 / Contact</p>
+                <h2 data-aos="zoom-in" class="mt-4 text-3xl font-extrabold leading-tight sm:text-5xl">
+                    Un échange professionnel,<br>
+                    <span class="text-lime">un projet utile.</span>
+                </h2>
+                <p data-aos="zoom-in" class="mx-auto mt-6 max-w-xl text-sm leading-7 text-gray-400">Basé à Parakou, je reste disponible
+                    pour une collaboration, un échange autour des soins ou une initiative entrepreneuriale.
+                </p>
+                <div class="mt-6 flex flex-wrap justify-center gap-4">
+                    <a href="mailto:zounnegonndavid@gmail.com"
+                        data-aos="zoom-in-right"
+                        class="mt-8 inline-flex items-center gap-3 rounded-full bg-lime px-7 py-4 text-sm font-bold text-forest transition hover:scale-105">
+                        zounnegonndavid@gmail.com
+                        <span>↗</span>
+                    </a>
+                    <a href="https://wa.me/2290146394217"
+                        data-aos="zoom-in-left"
+                        class="mt-8 inline-flex items-center gap-3 rounded-full bg-body border border-lime px-7 py-4 text-sm font-bold text-white transition hover:scale-105">
+                        +229 01 46 39 42 17
+                        <span>↗</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-900 px-4 py-12 text-white sm:px-8">
+        <div
+            class="mx-auto flex max-w-7xl flex-col items-center gap-3 text-center sm:flex-row sm:justify-between sm:text-left">
+            <a href="#accueil" class="text-2xl font-extrabold">David<span class="text-lime">.</span></a>
+            <p class="text-xs text-gray-400">Infirmier & entrepreneur · Parakou, Bénin</p>
+            <p class="text-xs text-gray-500">© 2026 Zounnegon Iboukoun David</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, duration: 700 });
+        const menuButton = document.querySelector('#menu-button');
+        const menu = document.querySelector('#main-menu');
+        menuButton.addEventListener('click', () => { const open = menuButton.getAttribute('aria-expanded') === 'true'; menuButton.setAttribute('aria-expanded', String(!open)); menu.classList.toggle('hidden', open); });
+        menu.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => { menu.classList.add('hidden'); menuButton.setAttribute('aria-expanded', 'false'); }));
+        const links = document.querySelectorAll('.nav-link');
+        const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) links.forEach((link) => link.classList.toggle('active-link', link.getAttribute('href') === `#${entry.target.id}`)); }), { rootMargin: '-35% 0px -55%' });
+        document.querySelectorAll('header[id], section[id]').forEach((section) => observer.observe(section));
+    </script>
+</body>
+
+</html>
